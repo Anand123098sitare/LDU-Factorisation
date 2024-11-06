@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDU Factorization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LDU Factorization of an n*n Matrix</h1>
+        <div>
+            <label for="matrixSize">Matrix Size (n): </label>
+            <input type="number" id="matrixSize" value="3" min="1">
+            <button onclick="generateMatrix()">Generate Matrix</button>
+        </div>
+        <div id="matrixInput"></div>
+        <button onclick="factorizeLDU()">Factorize</button>
+        <div id="output"></div>
+    </div>
+</body>
+</html>
