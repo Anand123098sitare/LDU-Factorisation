@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: Arial, sans-serif,color=white;
+    background: linear-gradient(135deg, #3e4f54 0%, #86526c 100%);
     margin: 0;
     padding: 20px;
     min-height: 100vh;
@@ -9,22 +9,22 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color:#51768a;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgb(233, 221, 221);
 }
 
 h1 {
-    color: #2c3e50;
+    color: #e3e9ee;
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.2em;
 }
 
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: #D7BCC8;
+    color: rgb(15, 13, 13);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #bb5ab9;
 }
 
 input[type="number"] {
@@ -73,11 +73,11 @@ input[type="number"] {
     padding: 15px;
     background-color: #fff;
     border-left: 4px solid #3498db;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(231, 229, 229, 0.05);
 }
 
 .step h3 {
-    color: #2c3e50;
+    color: #e8ebef;
     margin-top: 0;
 }
 
@@ -98,4 +98,25 @@ input[type="number"] {
         margin: 10px;
         padding: 10px;
     }
+}
+
+#navbar{
+    background-color: #D7BCC8;
+    display: block;
+    position: relative;
+    text-align: right;
+    bottom: 8px;
+    height:26px
+}
+
+#home{
+    color:black;
+    font-size: 23px;
+    text-decoration: none;
+    animation: color 1s ease-in-out 0s infinite none normal;
+}
+
+@keyframes color{
+    from{color: black;}
+    to{color: red;}
 }
