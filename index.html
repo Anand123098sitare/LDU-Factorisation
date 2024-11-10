@@ -6,7 +6,7 @@
     <title>LDU Factorization</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function Create_Matrix() {
+        function Create_a_Matrix() {
             const n = parseInt(document.getElementById('matrixSize').value);
             let html = '<div class="matrix">';
             
@@ -27,7 +27,7 @@
         <div>
             <label for="matrixSize" id="size"><b>Enter Matrix Size (n): </b></label>
             <input type="number" id="matrixSize" value="" min="1">
-            <button onclick="Create_Matrix()">Generate Matrix</button>
+            <button onclick="Create_a_Matrix()">Generate Matrix</button>
         </div>
         <br>
         <div id="matrixInput"></div>
