@@ -1,76 +1,81 @@
-#back{
-    height:750px;
-    width:1500px;
-    position: relative;
-    background-image: url("im_bakground.jpg");
-    background-size: cover;
-    top:0px;
+:root {
+    --primary-color: #3498db;
+    --text-color: #2c3e50;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#box1{
-    height:80px;
-    width:600px;
-    background-color: black;
-    position: relative;
-    top:30px;
-    left:30px;
-    font-size: 40px;
-    border-radius: 4%;
-    border: color 5px rgb(25, 175, 244);
-    border-top: 5px;
-    border-right: 5px;
-    border-style: solid;
-    color: aliceblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#box2{
-    height:450px;
-    width:1150px;
-    margin-left:200px;
-    background-color: black;
-    top: 30px;
-    border: 5px solid aliceblue;
-    position: relative;
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: var(--bg-gradient);
+    line-height: 1.6;
 }
 
-#info{
-    color: aliceblue;
-    font-size: 23px;
-    margin-left: 13px;
-    margin-right: 10px;
+#back {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.button{
-    background-color: antiquewhite;
-    height: 10px;
-    width: 7px;
-    position: relative;
-    border: 10px solid antiquewhite;
-    margin-left: 480px;
+#box1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#box2 {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+#info, #record {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.button, #relink {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
     text-decoration: none;
-    font-size: 30px;
-    animation-name: colortext;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
+    border-radius: 6px;
+    transition: opacity 0.2s;
 }
 
-@keyframes colortext {
-    from{color: red;}
-    to{color: black;}
+.button:hover, #relink:hover {
+    opacity: 0.9;
 }
 
-#record{
-    color: aliceblue;
-    font-size: 23px;
-    position: relative;
+@media (max-width: 768px) {
+    #back {
+        padding: 1rem;
+    }
+    
+    #box1 {
+        font-size: 2rem;
+    }
 }
 
-#relink{
-    background-color: antiquewhite;
-    border: 5px solid antiquewhite;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    position: relative;
+@media (max-width: 480px) {
+    #box1 {
+        font-size: 1.5rem;
+    }
+    
+    .button, #relink {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+    }
 }
