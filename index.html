@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LDU Factorization</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script>
+        function Create_Matrix() {
+            const n = parseInt(document.getElementById('matrixSize').value);
+            let html = '<div class="matrix">';
+            
+            for(let i = 0; i < n; i++) {
+                for(let j = 0; j < n; j++) {
+                    html += `<input type="number" class="matrix-cell" id="cell_${i}_${j}" value="0">`;
+                }
+                html += '<br>';
+            }
+            html += '</div>';
+            document.getElementById('matrixInput').innerHTML = html;
+        }
+    </script>
 </head>
 <body>
-    <div id="navbar">
-        <a id="home" href="h_front.html">HOME PAGE</a>
-    </div>
     <div class="container">
         <h1>LDU Factorization of an n*n Matrix</h1>
         <div>
-            <label for="matrixSize">Matrix Size (n): </label>
-            <input type="number" id="matrixSize" value="3" min="1">
-            <button onclick="generateMatrix()">Generate Matrix</button>
+            <label for="matrixSize" id="size"><b>Enter Matrix Size (n): </b></label>
+            <input type="number" id="matrixSize" value="" min="1">
+            <button onclick="Create_Matrix()">Generate Matrix</button>
         </div>
+        <br>
         <div id="matrixInput"></div>
-        <button onclick="factorizeLDU()">Factorize</button>
+        <button onclick="display_A()">Display Matrix</button>
         <div id="output"></div>
+        <p id="data"><b>LDU factorization decomposes a matrix ( A ) into three matrices: a lower triangular matrix ( L ), a diagonal matrix ( D ), and an upper triangular matrix ( U ). This decomposition is useful in various applications, including solving linear systems and numerical analysis.</b></p>
+        
     </div>
 </body>
 </html>
