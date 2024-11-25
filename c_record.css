@@ -1,0 +1,241 @@
+* {
+    background-color: #134611;
+}
+
+.head {
+    color: #E8FCCF;
+}
+
+h1 {
+    background-color: #e8fccf;
+    text-align: center;
+    font-size: 3em;
+}
+h3 {
+    margin: 30px 10px;
+}
+
+#photo {
+    height: 300px;
+    width: 1480px;
+    border: 6px solid #96E072;
+    display: inline-block;
+    background-color: #134611;
+    position: relative;
+}
+
+#ph5 {
+    height: 255px;
+    width: 255px;
+    border: 5px solid black;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    right: 3px;
+    background-image: url("im_sneha.jpg");
+    background-size: cover;
+}
+
+#ph4 {
+    height: 255px;
+    width: 255px;
+    border: 5px solid black;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    right: 300px;
+    background-image: url("im_priyadarshi.jpg");
+    background-size: cover;
+}
+
+#ph3 {
+    height: 255px;
+    width: 255px;
+    border: 5px solid black;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    right: 604px;
+    background-image: url("im_mohit.jpg");
+    background-size: cover;
+}
+
+#ph2 {
+    height: 255px;
+    width: 255px;
+    border: 5px solid black;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    left: 304px;
+    background-image: url("im_deb.jpg");
+    background-size: cover;
+}
+
+#ph1 {
+    height: 255px;
+    width: 255px;
+    border: 5px solid black;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    left: 3px;
+    background-image: url("im_anand.jpg");
+    background-size: cover;
+}
+
+.name {
+    height: auto;
+    font-size: 20px;
+    color: #E8FCCF;
+}
+
+#meet1 {
+    height: 200px;
+    width: 1400px;
+    position: relative;
+    border-radius: 10%;
+    border-left: 5px solid rgb(43, 199, 235);
+    border-bottom: 5px solid rgb(43, 199, 235);
+}
+
+#email1 {
+    height: 200px;
+    width: 760px;
+    background-image: url("im_email1.png");
+    background-size: contain;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    border-radius: 1%;
+    border: 5px solid rgb(43, 199, 235);
+}
+
+#meet2 {
+    height: 200px;
+    width: 1400px;
+    position: relative;
+    top: 20px;
+    border-radius: 10%;
+    border-left: 5px solid rgb(43, 199, 235);
+    border-bottom: 5px solid rgb(43, 199, 235);
+}
+
+#email2 {
+    height: 240px;
+    width: 680px;
+    background-image: url("im_email2.png");
+    background-size: contain;
+    position: absolute;
+    left: 700px;
+    top: 0px;
+    border-radius: 1%;
+    border: 5px solid rgb(43, 199, 235);
+}
+
+#meet3 {
+    height: 200px;
+    width: 1400px;
+    position: relative;
+    top: 90px;
+    border-radius: 10%;
+    border-left: 5px solid rgb(43, 199, 235);
+    border-bottom: 5px solid rgb(43, 199, 235);
+}
+
+#email3 {
+    height: 240px;
+    width: 680px;
+    background-image: url("im_email3.png");
+    background-color: aliceblue;
+    background-size: contain;
+    position: absolute;
+    left: 490px;
+    top: 0px;
+    border-radius: 1%;
+    border: 5px solid rgb(43, 199, 235);
+}
+
+#meet4 {
+    height: 200px;
+    width: 1400px;
+    position: relative;
+    top: 150px;
+    border-radius: 10%;
+    border-left: 5px solid rgb(43, 199, 235);
+    border-bottom: 5px solid rgb(43, 199, 235);
+}
+
+#email4 {
+    height: 240px;
+    width: 680px;
+    background-image: url("im_email4.png");
+    background-color: aliceblue;
+    background-size: contain;
+    position: absolute;
+    left: 600px;
+    top: 0px;
+    border-radius: 1%;
+    border: 5px solid rgb(43, 199, 235);
+}
+
+#meet5 {
+    height: 200px;
+    width: 1400px;
+    position: relative;
+    top: 200px;
+    border-radius: 10%;
+    border-left: 5px solid rgb(43, 199, 235);
+    border-bottom: 5px solid rgb(43, 199, 235);
+}
+
+#email5 {
+    height: 240px;
+    width: 680px;
+    background-image: url("im_email5.png");
+    background-color: aliceblue;
+    background-size: contain;
+    position: absolute;
+    left: 540px;
+    top: 0px;
+    border-radius: 1%;
+    border: 5px solid rgb(43, 199, 235);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #134611;
+    padding: 10px;
+    border-bottom: 2px solid #96E072;
+}
+
+#home,
+#github {
+    background-color: #68cf51;
+    color: #E8FCCF;
+    font-weight: bold;
+    font-size: 23px;
+    text-decoration: none;
+    animation: color 1s ease-in-out 0s infinite none normal;
+}
+
+@keyframes color {
+    from {
+        color: black;
+    }
+
+    to {
+        color: red;
+    }
+}

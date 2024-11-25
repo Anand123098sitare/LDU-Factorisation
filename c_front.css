@@ -1,0 +1,73 @@
+#back {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("im_background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#box1 {
+    height: 80px;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin: 30px auto;
+    font-size: 40px;
+    border-radius: 8px;
+    border: 5px solid rgb(25, 175, 244);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box2 {
+    height: 450px;
+    max-width: 1150px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid aliceblue;
+    position: relative;
+    padding: 20px;
+}
+
+#info {
+    color: aliceblue;
+    font-size: 23px;
+    margin: 10px;
+}
+
+
+.button:hover {
+    background-color: #d2b48c;
+}
+
+@keyframes colortext {
+    0% { color: red; }
+    100% { color: black; }
+}
+
+#record {
+    color: aliceblue;
+    font-size: 23px;
+    position: relative;
+}
+
+.button, #relink {
+    text-align: center;
+    background-color: antiquewhite;
+    border: none;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+#relink:hover {
+    background-color: #d2b48c;
+}
